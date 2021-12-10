@@ -9,9 +9,8 @@ padding-bottom: 20px;
 }
 
 .longbox{
-    width: 940;
+    width: 940px;
     height: 100px;
-
 }
 
 .box{
@@ -31,5 +30,5 @@ padding-bottom: 20px;
 }
 
 .ml-20{
-    
+    margin-left: 20px;
 }
