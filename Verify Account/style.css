@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+  font-family: "Muli", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 700px;
+  margin: 10px;
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+.para{
+   margin: 0 50px; 
+}
+
+.code-container {
+  width: 90%;
+  margin: 2.5rem;
+}
+
+.code {
+  width: 4rem;
+  margin: 1.5rem 0.2rem;
+  caret-color: transparent;
+  border-radius: 5px;
+  font-size: 60px;
+  border: 1px solid #eee;
+  text-align: center;
+  font-weight: 300;
+  -moz-appearance: textfield;
+
+
+}
+
+.code::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.code:valid{
+    border-color: #3498db;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.code:focus{
+    border-color: #3498db;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+}
+
+#button{
+    width: 40%;
+    height: 40px;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: #eee;
+    border: none;
+    border-radius: 5px;
+}
+
+#button:hover{
+    background-color: #eee;
+    border: 2px solid #3498db;
+    color: #3498db;
+    cursor: pointer;
+}
+
+.info{
+    background-color: #eaeaea;
+    display: inline-block;
+    padding: 10px;
+    line-height: 20px;
+    max-width: 400px;
+    color: #777;
+    border-radius: 5px;
+}
+
+@media(max-width:600px){
+   .code-container{
+        display: grid;
+        grid-template-columns: repeat(3,0fr);
+        justify-content: center;
+
+    }
+    .code{
+        font-size: 40px;
+        height: 60px;
+        padding: 5px;
+        max-width: 45px;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <form action="">
+        <label for=""> Enter the number to it's factorial</label>
+        <input type="number" id="input">
+        <input type="button" onclick="fact()" value="Get Factorial">
+    </form>
+    <div id="factorial">
+    </div>
+    <script>
+        
+
+        var fact = function(){
+        var a = Number(document.getElementById("input").value);
+        var b = 1;
+
+        for(let i = 1; i<=a; i++){
+            b = b*i;
+        }
+
+        document.getElementById("factorial").innerHTML = b;
+
+        
+        
+        
+    }
+    
+
+        
+
+
+    </script>
+</body>
+</html>

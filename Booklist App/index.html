@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Booklist App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 class="heading"><i class="fas fa-book-open"></i> Booklist App</h2>
+            <p class="para"></p>
+        </div>
+        <div class="body">
+            <label for="Title">Title</label> <input type="text"  class="input" name="" id="title">
+            <label for="Title">Author</label> <input type="text" class="input"  name="" id="author">
+            <label for="Title">ISBN</label> <input type="text" class="input"  name="" id="isbn">
+            <input type="button" name="" id="addbook" value="Add Book">
+            
+            <div class="book-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>ISBN</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <tr>
+                            <td>The White Tiger</td>
+                            <td>Arvind Adiga</td>
+                            <td>123654789</td>
+                            <td class="td"><i class="fas fa-times" ></i></td>
+                        </tr>
+
+                        <tr class="td">
+                            <td>Desire Demise & Destiny</td>
+                            <td>Kishan</td>
+                            <td>1234567</td>
+                            <td ><i class="fas fa-times"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
