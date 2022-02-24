@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&family=Righteous&display=swap");
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Lato;
+
+}
+header{
+    padding: -20px 0;
+    /* margin: -10px 0; */
+}
+
+.navbar-brand{
+    font-family: Pacifico;
+    font-size: 35px;
+
+}
+
+.bluish-color{
+    color: rgb(0, 223, 211);
+    margin-right: 0;
+}
+
+.nav-link{
+    font-size: 16px;
+    color: black;
+    margin: 10px;
+    font-family: Roboto Condenced;
+}
+
+.navbar-link:hover{
+    color: gray;
+}
+.menu-right-btn{
+    padding: 13px 45px;
+    margin: 4%;
+    background-color: transparent;
+    transform: all 300ms ease-in;
+}
+
+.menu-right-btn:hover{
+   background-color: aqua;
+   color: white;
+}
+
+.site-content{
+    height: 500px;
+    background-image: url("image5.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.site-title, .site-desc{
+    color:white ;
+    font-family: Ringteous;
+    
+}
+
+.h1{
+    margin-top: 30%;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Righteous', cursive;
+}
+
+.site-desc{
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    padding-bottom: 7%;
+    font-family: 'Righteous', cursive;
+}
+
+.section-1{
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.section-1 .para-1{
+    margin: 20px;
+    padding-bottom: 30px;
+    color: black;
+}
+
+.section-2{
+    height: 500px;
+    background-image: url("image6.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section-2 .heading-1{
+    font-family: Ringteous;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.section-2 .para-1{
+
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.section-2 input{
+    width:100px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    fill: lightcoral;
+    border-radius: 5px;
+    cursor: alias;
+
+}
+
+.section-3{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+}
+
+.section-3 h3, .section-3 i{
+    color: rgb(4, 92, 4);
+}
+
+.section-4{
+    padding-bottom: 35px;
+    margin-bottom: 10%;
+}
+
+.section-4 .para-1{
+    font-size: larger;
+    color: white;
+    margin-top: 20px;
+  
+}
+
+.section-4 .heading-1{
+    font-family: Pacifico;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section-5{
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.section-5 .form{
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.section-5 h5{
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.section-5 h6{
+    font-size: smaller;
+ 
+    margin-bottom: 20px;
+}
+
+.section-5 .love{
+    color: red;
+}
+

@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Muli",sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+#panel-1{
+    background-image: url(image1.jpg);
+}
+
+#panel-2{
+    background-image: url(image4.jpg);
+}
+
+#panel-3{
+    background-image: url(image3.jpg);
+}
+#panel-4{
+    background-image: url(image2.jpg);
+}
+
+#panel-5{
+    background-image: url(image5.jpg);
+}
+
+
+
+.container{
+    display: flex;
+    width: 90vw;
+}
+
+.panel{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: all 500ms ease-in;
+}
+
+
+
+.panel h3{
+    font-size: 25px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active{
+    flex: 10;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+
+@media (max-width: 480px) {
+    .container{
+        width: 90vw;
+    }
+
+    .panel.active{
+        flex: 7;
+    }
+
+    .panel h3{
+        font-size: 20px;
+    }
+
+    #panel-4,#panel-5{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 200px){
+    .panel h3{
+        font-size: 0;
+    }
+}
