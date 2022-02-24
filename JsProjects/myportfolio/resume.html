@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="name">
+            <h2 class="heading">Kishan Dewangan</h2>
+            <button id="print">Print</button>
+           <span> Email : <a href="mailto:kishan.dewangan1800@gmail.com">kishan.dewangan1800@gmail.com </a> </span><br>
+           <span> Contact No : <a href="tel:7999799095">+91-7999799095</a> </span> <br>
+           <span> Linkedin : <a href="https://www.linkedin.com/in/kishandewangan1800/">https://www.linkedin.com/in/kishandewangan1800 </a>
+
+        </div>
+    </div>
+    <script>
+        const printResume = document.getElementById("print");
+        printResume.addEventListener("click",()=>{
+            window.print();
+        });
+    </script>
+</body>
+</html>
