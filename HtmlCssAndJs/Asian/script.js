@@ -5,6 +5,7 @@ const reset = document.getElementById("reset_button");
 change.addEventListener("click", changeEvent);
 reset.addEventListener("click", resetEvent);
 
+
 function changeEvent() {
   const block = document.getElementById("block_id");
   const color = document.getElementById("colour_id");
