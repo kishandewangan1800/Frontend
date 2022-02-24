@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+ 
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+}
+.heading{
+    text-align: center;
+    color: blue;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.heading:hover{
+    box-shadow: 5px 5px 5px -4px gray;
+}
+
+.baloon-container{
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.baloons{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    font-weight: 900px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sub-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+
+
+h1{
+    color: blue;
+}
+
+.play{
+    width: 400px;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: indigo;
+    color: white;
+    justify-content: center;
+}
+
+
+
+.play:hover{
+    box-shadow: 5px 5px 5px -4px gray;
+    background-color: white;
+    border: 2px solid indigo;
+    color: indigo;
+    transition: 0.2s ease-in-out;
+}
+
+@media(max-width:550px) {
+    .baloon-container{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        width: 350px;
+        padding: 0;
+    }
+    .baloons{
+        width: 50px;
+        height: 50px;
+        margin: 2px;
+        font-size: 1rem;
+    }
+    .heading{
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin-bottom: 0;
+    }
+
+    h1{
+        font-size: 1.1rem;
+    }
+    .play{
+        width: 200px;
+    }
+}
