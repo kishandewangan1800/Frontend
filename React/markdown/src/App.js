@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Birthday from "./component/Birthday";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Button, ProgressBar } from 'react-bootstrap'
 import './App.css';
 
 function App() {
+  const [show, setShow] = useState(true);
+  let [count, setCount] = useState(0);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container>
+        {show && <Birthday />}
+        <Button variant='dark' onClick={() => setShow(!show)}>{show ? 'Hide' : 'Show'}</Button>
+
+        <Button variant='success' onClick={() => setCount(++count)}>Count</Button>
+        <ProgressBar now={count}></ProgressBar>
+        <h1>{count}</h1>
+      </Container>
     </div>
   );
 }

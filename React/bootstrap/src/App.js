@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <NavbarBlock />
-      <h1 className='m-10'>Flipkart</h1>
+      <h1 style={{margin: "20px"}}>Flipkart</h1>
       <Product />
     </div>
   );
