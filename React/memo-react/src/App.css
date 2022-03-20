@@ -1,12 +1,16 @@
 .App {
-  text-align: left;
-  margin: 20px auto;
+  text-align: center;
 }
 
-.App-logo {
+.App-logo{
   height: 40vmin;
-  pointer-events: none;
-  animation: App-logo-spin infinite 20s linear;
+  /* pointer-events: none; */
+  animation: App-logo-spin infinite 10s linear;
+}
+
+.App-logo:hover {
+  cursor: pointer;
+  animation: App-logo-antispin infinite 2s linear;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -36,5 +40,16 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+@keyframes App-logo-antispin {
+  from {
+    transform: rotate(360deg) translate(30px, 30px);
+    
+  }
+  to {
+    transform: rotate(0deg) translate(30px, 30px);
   }
 }
