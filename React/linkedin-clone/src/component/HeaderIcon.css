@@ -1,0 +1,22 @@
+.header-icons{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #666;
+    cursor: pointer;
+    margin: 2px 8px;
+}
+
+.header-icons:hover{
+    color: black;
+}
+
+.header-icon-all{
+    font-size: 50px;
+}
+
+.icon-name{
+    margin: 0;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
