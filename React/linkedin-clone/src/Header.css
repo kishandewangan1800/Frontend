@@ -1,6 +1,5 @@
 .header{
     display: flex;
-    /* background-color: #aaa; */
     align-items: center;
     padding: 2px 12%;
     justify-content: space-between;
@@ -8,11 +7,6 @@
     background-color: white;
 }
 
-@media screen and (max-width: 992px) {
-    .header{
-        padding: 2px 7%;
-    }
-}
 
 .left-header{
     display: flex;
@@ -28,7 +22,7 @@
 
 .search-icon{
     background-color: #eef3f8;
-    padding: 5px 0 5px 5px;
+    padding: 5px 0 5px 10px;
     border-radius: 5px 0 0 5px;
     cursor: pointer;
     margin-left: 5px;
@@ -55,17 +49,12 @@
  align-items: center;
  flex-direction: row;
  float: right;
- width: 55%;
  justify-content: space-evenly;
 }
 
-.my-picture{
-    border-right: 1px solid #ddd;
-    padding-right: 20px ;
-}
-
-.prifile-img{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
+.vertical-line{
+    height: 50px;
+    width: 0.2px;
+    background-color: #ccc;
+    margin: 0 10px;
 }

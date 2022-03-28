@@ -2,9 +2,16 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: #666;
+    color: #777;
     cursor: pointer;
     margin: 2px 8px;
+}
+
+.pro-image{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+
 }
 
 .header-icons:hover{
@@ -19,4 +26,8 @@
     margin: 0;
     flex-wrap: wrap;
     font-size: 12px;
+}
+
+.icon-down{
+    margin: -5px;
 }

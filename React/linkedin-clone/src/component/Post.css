@@ -1,0 +1,90 @@
+.post{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin:  10px 0;
+}
+
+
+.post-reaction{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;    
+}
+.avatar-name .avatar-div{
+    width: 80px;
+    height: 80px;
+}
+.avatar-name{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.name-post{
+    color: #0a66c2;
+    height: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.name-post:hover{
+    text-decoration: underline;
+}
+
+.post-image{
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 15px;
+}
+
+.response{
+    font-size: 13px;
+    margin: 5px;
+    position: relative;
+}
+
+.left-response{
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.right-response{
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.response-comments{
+    margin-left: 10px;
+    
+}
+
+.response-share{
+    margin-left:10px ;
+    position: absolute;
+    right: 10px ;
+    
+}
+
+.left-response:hover, .response-share:hover, .response-comments:hover{
+    color:#0a66c2;
+    text-decoration: underline;
+}
+
+.responsed-personalbar{
+    margin-bottom: 10px;
+    color: #666;
+    cursor: pointer;
+}
+
+.responsed-personalbar:hover{
+   color: #0a66c2;
+   text-decoration: underline;
+}
+
+
+
+hr{
+    margin-top: 10px;
+}

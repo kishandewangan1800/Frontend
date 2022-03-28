@@ -32,7 +32,8 @@ function Header() {
         <HeaderIcons Icon={BusinessCenterIcon} title='Job' />
         <HeaderIcons Icon={MessageIcon} title='Messaging' />
         <HeaderIcons Icon={CircleNotificationsIcon} title='Notification' />
-        <div className='my-picture'><img src="https://media-exp1.licdn.com/dms/image/C4D03AQGpVgI75IYw5Q/profile-displayphoto-shrink_800_800/0/1643054655690?e=1653523200&v=beta&t=68iGFg5fGcY9WX1EQ1a0Yw1k11IFalh856yowzLro4A" alt="Profile" className='prifile-img' /> <div><span style={{fontSize:'12px', margin:0}}>Me</span></div></div>
+        <HeaderIcons IconDown={ArrowDropDownIcon} image="https://media-exp1.licdn.com/dms/image/C4D03AQGpVgI75IYw5Q/profile-displayphoto-shrink_800_800/0/1643054655690?e=1653523200&v=beta&t=68iGFg5fGcY9WX1EQ1a0Yw1k11IFalh856yowzLro4A" title='Me' />
+        <div className="vertical-line"></div>
         <HeaderIcons Icon={GridViewRoundedIcon} IconDown={ArrowDropDownIcon} title='Work' /> 
         <HeaderIcons Icon={WorkIcon} title='Post Job' />
       </div>
