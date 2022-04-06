@@ -36,3 +36,6 @@
     flex-direction: row;
 }
 
+.post-submit{
+    display: none;
+}

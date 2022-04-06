@@ -1,27 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resume</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            background-color: lightgray;
+
+        }
+
+        body {
+            width: 750px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .heading-name {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .heading {
+            margin-top: 13px;
+            background-color: #ddd;
+            padding: 2px 5px;
+            margin-bottom: 4px;
+        }
+
+        .resume-skills>ul {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .project {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            padding-right: 50px;
+        }
+
+        button {
+            background-color: #eee;
+            width: 100px;
+            height: 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: lightblue;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td,
+        tr,
+        table {
+            border: 1px solid gray;
+            overflow: hidden;
+            text-align: center;
+            border-collapse: collapse;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="name">
-            <h2 class="heading">Kishan Dewangan</h2>
-            <button id="print">Print</button>
-           <span> Email : <a href="mailto:kishan.dewangan1800@gmail.com">kishan.dewangan1800@gmail.com </a> </span><br>
-           <span> Contact No : <a href="tel:7999799095">+91-7999799095</a> </span> <br>
-           <span> Linkedin : <a href="https://www.linkedin.com/in/kishandewangan1800/">https://www.linkedin.com/in/kishandewangan1800 </a>
+   
+    <div class="resume">
+        <div class="resume-heading">
+            <h2 class="heading-name">Kishan Dewangan</h2>
+        </div>
+        <div class="resume-body">
+            <div class="resume-contact">
+                <div><span class="bold">Contact : </span> <span> <a href="tel:+917999799095"
+                            target="_blank">+91-7999799095</a></span></div>
+                <div><span class="bold">Email : </span> <span> <a
+                            href="mailto:kishan.dewangan1800@gmail.com?subject = Contact&body = Message"
+                            target="_top">kishan.dewangan1800@gmail.com</a></span></div>
+                <div><span class="bold">LinkedIn : </span> <span> <a
+                            href="https://www.linkedin.com/in/kishandewangan1800"
+                            target="_blank">https://www.linkedin.com/in/kishandewangan1800</a></span></div>
+            </div>
+
+            <div class="resume-education">
+                <h3 class="heading">
+                    Education
+                </h3>
+                <table>
+                    <tr>
+                        <td>BE (Mechanical Engineering)</td>
+                        <td>2014-2018</td>
+                        <td>CSVTU, Bhilai</td>
+                        <td>77.61%</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>CG (Class XII)</td>
+                        <td>2014</td>
+                        <td>SSMSV, Raipur</td>
+                        <td>77.40%</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>CG (Class X)</td>
+                        <td>2012</td>
+                        <td>CSVTU, Bhilai</td>
+                        <td>79.67%</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div class="resume-project">
+                <h3 class="heading">Projects </h3>
+                <ul>
+                    <li>
+                        <div class="project"><span class="bold">LinkedIn Clone</span>
+                            <span><a href="#">Code</a></span>
+                            <span><a href="#">Demo</a></span>
+                        </div>
+                        <ul>
+                            <li>LinkedIn Clone is the clone of LinkedIn Social Website.</li>
+                            <li>Function based component.</li>
+                            <li>Redux to manage Global State.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="project"><span class="bold">Chat Application</span>
+                            <span><a href="#">Code</a></span>
+                            <span><a href="#">Demo</a></span>
+                        </div>
+                        <ul>
+                            <li>Chat Application is the clone of LinkedIn Social Website.</li>
+                            <li>Function based component.</li>
+                            <li>Redux to manage Global State.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="project"><span class="bold">Portfolio Website</span>
+                            <span><a href="#">Code</a></span>
+                            <span><a href="#">Demo</a></span>
+                        </div>
+
+                        <ul>
+                            <li>Responsive Portfolio Website.</li>
+                            <li> Vanilla JavaScript for function.</li>
+                            <li> Vanilla CSS for styling.</li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="resume-experience">
+                <h3 class="heading">Experience</h3>
+                <ul>
+                    <li><span class="bold">Marketing & Public Relation Specialist </span> <span> (May 2018 - Oct
+                            2021)</span>
+                        <ul>
+                            <li> Increase business by maintaining healthy relationship with Associates, Clients, and
+                                Corporate.</li>
+                            <li> Maintain healthy Public Relation and Advertise through Digital Camping and Promotional
+                                Activities.</li>
+                            <li> Conducting events for future benefits, develop marketing and promotion concepts to
+                                maintain optimal
+                                workflow and monthly target.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="resume-certifications">
+                <h3 class="heading">Courses & Certifications</h3>
+                <ul>
+                    <li><span class="bold"> Full-stack Development </span>from <span class="bold">Acciojob </span> (Dec
+                        2021 - May 2022)</li>
+                    <li><span class="bold">DSA</span> in <span class="bold">Java</span> from <span class="bold">Coding
+                            Ninjas </span> (Aug 2021 - Feb 2022)</li>
+                </ul>
+
+            </div>
+
+            <div class="resume-skills">
+                <h3 class="heading">Skills</h3>
+                <ul>
+                    <li><span class="bold">HTML, CSS & JavaScript</span></li>
+                    <li><span class="bold">Basics of Java</span></li>
+                    <li><span class="bold">React, Redux</span></li>
+                    <li><span class="bold">Data Structures & Algorithms</span></li>
+                    <li><span class="bold">Microsoft Office</span></li>
+                    <li><span class="bold">PR & Marketing Management</span></li>
+                </ul>
+            </div>
+
+            <div class="resume-achievement">
+                <h3 class="heading">Achievements</h3>
+                <ul>
+                    <li><span class="bold"> Employee of the Year – 2019 </span> (Maheshwari Brand Promotion)</li>
+                </ul>
+            </div>
+
+
 
         </div>
     </div>
-    <script>
-        const printResume = document.getElementById("print");
-        printResume.addEventListener("click",()=>{
-            window.print();
-        });
-    </script>
+    <br>
+    <button onclick="window.print()"><div>Print Resume</div></button>
 </body>
+
 </html>

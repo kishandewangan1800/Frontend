@@ -14,7 +14,7 @@ const dataMain = [
         respondName:'Anil Verma',
         content: 'Who controls the memes controls the Universe... hahaha',
         avatar:'https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg',
-        postImage:'https://c.tenor.com/IvBIKwbv6VIAAAAC/orange-juice-meme-orange-juice.gif',
+        postImage:'https://images.hindustantimes.com/img/2021/09/15/1600x900/Apple_launch_meme_fest_1631685010141_1631685013898.jpg',
         reacted: 50022,
         share:1050,
         comments: 4512
