@@ -656,14 +656,117 @@ a:hover {
   padding-top: 35px;
 }
 
+.projects-body{
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 90%;
+  min-height: 90vh;
+}
+
+.project-1,.project-2, .project-3, .project-4{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  position: relative;
+}
+
+.pro{
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  min-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  opacity: 0.5;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.pro:hover{
+  opacity: 0.85;
+  width: 65%;
+  min-width: 320px;
+}
+
+.button-project{
+  position: relative;
+  left: 120%;
+}
+
+.project-5,.project-6, .project-7, .project-8{
+  width: 100%;
+  display: none;
+  justify-content: center;
+  margin-top: 10px;
+  position: relative;
+}
+
+.demo, .code{
+  width: 90px;
+  height: 28px;
+}
+
+.pro-5, .pro-6, .pro-7, .pro-8{
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+#less{
+  display: none;
+}
+
+.project-button{
+  position: absolute;
+  display: block;
+  bottom: 15px;
+  z-index: 100;
+}
+
 @media screen and (max-width:610px){
   .projects-heading{
     font-size: 1.5rem;
     padding: 25px 0 15px 0;
     margin-top: 10px;
   }
+  .button-project{
+    position: static;
+    margin-left: 10px;
+  }
+
 }
 
+.project-title-name{
+  text-align: center;
+}
+
+@media screen and (max-width:800px){
+  .projects-body{
+    display: grid;
+    grid-template-columns: auto;
+    width: 80%;
+  }
+
+  .pro{
+    min-width: 80%;
+  }
+
+  .button-project{
+    position: static;
+    margin-left: 10px;
+  }
+
+  .pro:hover{
+    opacity: 0.85;
+    min-width: 85%;
+  }
+
+}
 
 .contact-heading {
   display: flex;

@@ -3,16 +3,16 @@ import React from 'react'
 function TheirMessage({ message, lastMessage }) {
     const isFirstMessageByUser = !lastMessage || lastMessage.sender.username !== message.sender.username;
 
-    if (message?.attachment?.length > 0) {
-        return (
-            <img
-                src={message.attachment[0].file}
-                alt='message-attachment'
-                className='message-image'
-                style={{ float: 'right' }}
-            />
-        )
-    }
+    // if (message?.attachments?.length > 0) {
+    //     return (
+    //         <img
+    //             src={message.attachments[0].file}
+    //             alt='message-attachments'
+    //             className='message-image'
+    //             style={{ float: 'left' }}
+    //         />
+    //     )
+    // }
 
     return (
         <div className='message-row'>
@@ -22,17 +22,17 @@ function TheirMessage({ message, lastMessage }) {
             />}
 
             {
-                (message?.attachment?.length > 0)
+                (message?.attachments?.length > 0)
                     ? (
                         <img
-                            src={message.attachment[0].file}
-                            alt='message-attachment'
+                            src={message.attachments[0].file}
+                            alt='message-attachments'
                             className='message-image'
-                            style={{ marginLeft: isFirstMessageByUser ? '4px' :'48px' }}
+                            style={{ marginLeft: isFirstMessageByUser ? '4px' :'48px',float: 'left'  }}
                         />
                     )
                     : (
-                        <div className="message" style={{ float: 'left', backgroundColor: '#cabcdc',marginLeft: isFirstMessageByUser ? '4px' :'48px' }}>
+                        <div className="message" style={{ float: 'left' , backgroundColor: '#cabcdc', marginLeft: isFirstMessageByUser ? '4px' :'48px' }}>
                             {message.text}
                         </div>
                     )
