@@ -7,15 +7,15 @@ import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import NotesIcon from '@mui/icons-material/Notes';
 import Post from './Post';
-import { db } from './firebase';
+// import { db } from './firebase';
 
 function Feed() {
   const [posts, setposts] = useState([]);
  
 
-  useEffect(()=>{
-    db.collection('posts').onSnapshot()
-  },[]);
+  // useEffect(()=>{
+  //   db.collection('posts').onSnapshot()
+  // },[]);
 
   const sendPost = (e) => {
     e.preventDefault();
