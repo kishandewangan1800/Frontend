@@ -8,7 +8,7 @@ const Form = () => {
     <Grid container spacing={2}>
         <Grid item xs={12}>
             <Typography align='center' variant='subtitle1'gutterBottom >
-                ...1
+                .....
             </Typography>
         </Grid>
 
@@ -18,6 +18,7 @@ const Form = () => {
                 <Select>
                     <MenuItem value='Income'>Income</MenuItem>
                     <MenuItem value='Expense'>Expense</MenuItem>
+                    
                 </Select>
 
             </FormControl>
