@@ -41,7 +41,7 @@ const Quiz = () => {
   )
 }
 
-export default Quiz
+export default Quiz;
 
 const styles = StyleSheet.create({
 
@@ -53,6 +53,7 @@ const styles = StyleSheet.create({
     marginVertical:15,
     // height:'10%',
   },
+  
   options:{
     marginVertical:15,
     flex:1,

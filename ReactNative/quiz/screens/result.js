@@ -21,7 +21,7 @@ const Result = () => {
   )
 }
 
-export default Result
+export default Result;
 
 const styles = StyleSheet.create({
   banner: {
