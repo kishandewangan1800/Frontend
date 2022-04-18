@@ -8,7 +8,6 @@ const header = document.querySelector(".header");
 
 
 window.addEventListener("load",()=>{
-
     root.style.setProperty('--darkmode', localStorage.getItem('--darkmode'));
     root.style.setProperty('--lightmode', localStorage.getItem('--lightmode'));
     root.style.setProperty('--bg-image',localStorage.getItem('--bg-image'));

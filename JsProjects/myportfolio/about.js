@@ -1,8 +1,6 @@
 const education = document.querySelectorAll(".edu");
 const educat = document.querySelectorAll(".educat");
 
-
-
 education.forEach((edu, x)=>{
     
     edu.addEventListener("click",()=>{
