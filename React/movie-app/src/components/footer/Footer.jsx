@@ -1,8 +1,11 @@
 import React from 'react'
+import image from '../../assets/footer-bg.jpg'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div>
+      <img src={image} alt="footer" />
+    </div>
   )
 }
 
