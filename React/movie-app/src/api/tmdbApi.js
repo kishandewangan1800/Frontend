@@ -1,6 +1,6 @@
 import axiosClient from "./axiosClient";
 export const category = {
-    movie : ' movie',
+    movie : 'movie',
     tv : 'tv'
 }
 
