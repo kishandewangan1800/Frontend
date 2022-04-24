@@ -1,6 +1,12 @@
 import React,{useState, useEffect} from 'react'
 import PropTypes from 'prop-types'
 
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+
 import './MovieList.scss'
 
 import { SwiperSlide, Swiper } from 'swiper/react';
@@ -44,7 +50,7 @@ const MovieList = props => {
         spaceBetween={10}
         slidesPerView={'auto'}
         >
-            {
+           {
                 items.map((item, i)=>(
                     <SwiperSlide key={i}>
                         <MovieCard item={item} category={props.category}/>
@@ -61,7 +67,6 @@ const MovieList = props => {
 MovieList.propTypes = {
     category: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
-
 }
 
 export default MovieList
