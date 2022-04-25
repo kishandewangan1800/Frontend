@@ -1,21 +1,28 @@
 import React,{useState, useEffect} from 'react'
 import PropTypes from 'prop-types'
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+// import SwiperCore, { Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+// swiper bundle styles
+import 'swiper/swiper-bundle.min.css'
 
+// swiper core styles
+import 'swiper/swiper.min.css'
+
+// modules styles
+import 'swiper/components/navigation/navigation.min.css'
+import 'swiper/components/pagination/pagination.min.css'
 
 import './MovieList.scss'
 
-import { SwiperSlide, Swiper } from 'swiper/react';
-import { Link } from 'react-router-dom';
-import Button from '../button/Button';
+// import 'swiper/css/autoplay';
+
+// import { Link } from 'react-router-dom';
+// import Button from '../button/Button';
 import MovieCard from '../movie-card/MovieCard';
 
 import tmbdApi,{category} from '../../api/tmdbApi';
-import apiConfig from '../../api/apiConfig';
+// import apiConfig from '../../api/apiConfig';
 
 const MovieList = props => {
     const [items, setItems] = useState([]);
@@ -45,10 +52,13 @@ const MovieList = props => {
 
   return (
     <div className='movie-list'>
-        <Swiper
+        {/* <Swiper
+        // grabCursor={true}
+        // spaceBetween={10}
+        // slidesPerView={'auto'}
         grabCursor={true}
-        spaceBetween={10}
-        slidesPerView={'auto'}
+                spaceBetween={10}
+                slidesPerView={'auto'}
         >
            {
                 items.map((item, i)=>(
@@ -58,7 +68,7 @@ const MovieList = props => {
                 ))
             }
 
-        </Swiper>
+        </Swiper> */}
 
     </div>
   )
