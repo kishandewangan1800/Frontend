@@ -8,6 +8,7 @@ import MovieGrid from '../components/movie-grid/MovieGrid';
 
 const Catalog = () => {
 
+  
   const {category} = useParams();
 
 
