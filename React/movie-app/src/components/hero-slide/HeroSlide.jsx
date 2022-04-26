@@ -3,8 +3,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay,Navigation, Pagination, Controller, Thumbs } from 'swiper';
 
-
-
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 import Button, { OutlineButton } from '../button/Button';
 import Modal, { ModalContent } from '../modal/Modal';
@@ -17,7 +19,7 @@ import { useHistory } from 'react-router';
 
 const HeroSlide = () => {
 
-    SwiperCore.use([Autoplay,Navigation, Pagination, Controller, Thumbs]);
+    // SwiperCore.use([Autoplay,Navigation, Pagination, Controller, Thumbs]);
 
     const [movieItems, setMovieItems] = useState([]);
 
