@@ -13,7 +13,7 @@ const Login = () => {
     localStorage.setItem('user', JSON.stringify(response.profileObj));
     const {name, googleId, imageUrl} = response.profileObj;
 
-    const doc ={
+    const doc = {
       _de:googleId,
       _type:'user',
       userName:name,
@@ -21,6 +21,7 @@ const Login = () => {
     }
 
   }
+
   return (
     <div className='flex justify-start items-center flex-col h-screen'>
       <div className="relative w-full h-full">

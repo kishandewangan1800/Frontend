@@ -1,0 +1,32 @@
+.btn {
+  width: 150px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 2px solid #007aff;
+  color: black;
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.btn-small {
+  height: 40px;
+  width: 40px;
+  padding: 10px 10px;
+}
+
+.btn:disabled:hover {
+  cursor: not-allowed;
+  background: linear-gradient(45deg, gray, black);
+  font-weight: 500;
+  color: white;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #007aff, blue);
+  animation: hue-rotate 0.5s linear infinite alternate;
+  font-weight: 500;
+  color: white;
+}
