@@ -4,10 +4,10 @@
   --bg-color: #000000;
   --title-color: #75f3d8;
   --hover: #32b3a8;
-  --ele-background : #4444449f;
+  --ele-background: #4444449f;
   --button-hover-color: black;
   --hero-color: #ffffff;
-  --bg-image:url('image/background3.jpg');
+  --bg-image: url("image/background3.jpg");
   --darkmode: block;
   --lightmode: none;
 }
@@ -40,11 +40,11 @@ body {
   /* overflow: hidden; */
 }
 
-li{
+li {
   list-style: none;
 }
 
-.body{
+.body {
   display: flex;
   justify-content: center;
 }
@@ -57,7 +57,7 @@ li{
   z-index: 1;
   /* transition: 2s ease; */
 }
-section{
+section {
   margin: 0;
   padding: 0;
 }
@@ -80,7 +80,7 @@ a {
   color: var(--title-color);
 }
 
-img{
+img {
   width: 40%;
 }
 
@@ -88,7 +88,12 @@ a:hover {
   color: var(--hover);
 }
 
-#brand, #home, #about, #skills, #projects, #contact{
+#brand,
+#home,
+#about,
+#skills,
+#projects,
+#contact {
   display: block;
   min-height: 100vh;
   transition: 0.3s ease-in-out;
@@ -122,8 +127,7 @@ a:hover {
   z-index: 1000;
 }
 
-
-.nav-brand>h1 {
+.nav-brand > h1 {
   margin: 0;
   font-size: 1.5rem;
   font-family: "Playfair Display", serif;
@@ -148,12 +152,12 @@ a:hover {
   min-width: 350px;
   list-style: none;
   /* font-weight: bold; */
-  margin:5px 20px 0 5px;
+  margin: 5px 20px 0 5px;
   z-index: 100;
   /* background-color: ; */
 }
 
-.nav-list:hover{
+.nav-list:hover {
   opacity: 1;
 }
 
@@ -194,19 +198,19 @@ a:hover {
   z-index: 200;
 }
 
-.dark{
+.dark {
   display: var(--lightmode);
 }
 
-.light{
+.light {
   display: var(--darkmode);
 }
 
-.right-bottom{
+.right-bottom {
   margin: 10px 0;
 }
 
-.horizontal{
+.horizontal {
   color: var(--title-color);
   background-color: var(--title-color);
   width: 70%;
@@ -214,7 +218,7 @@ a:hover {
   opacity: 0.6;
 }
 
-@media screen and (max-width:610px) {
+@media screen and (max-width: 610px) {
   .toggle {
     display: block;
     cursor: pointer;
@@ -251,7 +255,6 @@ a:hover {
     margin-top: 6px;
   }
 }
-
 
 .header-container {
   margin: 0;
@@ -294,13 +297,12 @@ a:hover {
   height: 40px;
   border: 1px solid var(--title-color);
   background-color: var(--bg-color);
-  
+
   background-image: linear-gradient(var(--title-color), var(--title-color));
   background-repeat: no-repeat;
   background-size: 0% 100%;
-  background-position-x:right;
+  background-position-x: right;
   transition: background-size 0.5s;
-
 
   margin: 20px 10px;
   border-radius: 5px;
@@ -315,10 +317,10 @@ a:hover {
   /* background-color: var(--title-color); */
   color: var(--button-hover-color);
   background-size: 100% 100%;
-  background-position-x:left ;
+  background-position-x: left;
 }
 
-@media screen and (max-width:610px) {
+@media screen and (max-width: 610px) {
   .nav-ulist {
     /* flex-direction: column; */
     min-width: 90%;
@@ -334,7 +336,6 @@ a:hover {
     z-index: 1000;
     border-radius: 5px;
     /* box-shadow: 5px 5px 5px -2px var(--ele-background); */
-
   }
 
   .list-item {
@@ -374,12 +375,11 @@ a:hover {
   color: var(--hover);
 }
 
-.home-body{
+.home-body {
   display: flex;
   justify-content: center;
   width: 100vw;
 }
-
 
 .home-heading {
   display: flex;
@@ -389,18 +389,18 @@ a:hover {
   padding-top: 35px;
 }
 
-.home-body{
+.home-body {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.home-profile{
+.home-profile {
   display: flex;
   justify-content: center;
 }
 
-.home-content{
+.home-content {
   margin: 15px;
   display: flex;
   justify-content: center;
@@ -408,7 +408,7 @@ a:hover {
   flex-direction: row;
 }
 
-.home-me{
+.home-me {
   display: flex;
   width: 80%;
   justify-content: center;
@@ -416,7 +416,7 @@ a:hover {
   cursor: pointer;
 }
 
-.profile{
+.profile {
   display: flex;
   justify-content: center;
   border-radius: 20px;
@@ -424,25 +424,25 @@ a:hover {
   max-width: 350px;
 }
 
-.hero{
+.hero {
   padding: 0;
   cursor: pointer;
   font-size: 1.5rem;
   transition: 0.5s ease-in-out;
 }
 
-.hero:hover{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.hero:hover {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: var(--hero-color);
   transition: 0.5s ease-in-out;
 }
 
-.hero-detail{
+.hero-detail {
   margin: 5px 0;
 }
 
-@media screen and (max-width:610px){
-  .home-heading{
+@media screen and (max-width: 610px) {
+  .home-heading {
     font-size: 1.5rem;
     padding: 25px 0 15px 0;
     margin-top: 10px;
@@ -457,7 +457,7 @@ a:hover {
   padding-top: 35px;
 }
 
-.about-body{
+.about-body {
   width: 80%;
   display: flex;
   justify-content: center;
@@ -465,7 +465,7 @@ a:hover {
   /* height: 100%; */
 }
 
-.education{
+.education {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -473,7 +473,7 @@ a:hover {
   align-items: flex-end;
 }
 
-.about-edu-bar{
+.about-edu-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -482,7 +482,7 @@ a:hover {
   position: relative;
 }
 
-.edu{
+.edu {
   width: 50px;
   height: 50px;
   font-weight: bold;
@@ -497,12 +497,14 @@ a:hover {
   transition: 0.3s ease-in-out;
 }
 
-.master{
+.bachelore {
   background-color: var(--title-color);
   color: var(--bg-color);
 }
 
-#bachelore, #hsc, #ssc{
+/* #bachelore, */
+#hsc,
+#ssc {
   display: none;
 }
 
@@ -512,30 +514,28 @@ a:hover {
 
 } */
 
-.exp{
+.exp {
   margin-left: 20px;
   margin-top: 10px;
 }
 
-.about-exp-bar{
+.about-exp-bar {
   position: relative;
 }
 
-.exp-container{
+.exp-container {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-
 }
 
-.experience{
+.experience {
   z-index: 1;
 }
 
-.experience-heading{
+.experience-heading {
   margin-left: 20px;
 }
-
 
 /* .bar-experience{
   width: 8px;
@@ -555,8 +555,8 @@ a:hover {
   z-index: -1;
 } */
 
-@media screen and (max-width:610px){
-  .about-heading{
+@media screen and (max-width: 610px) {
+  .about-heading {
     font-size: 1.5rem;
     padding: 25px 0 15px 0;
     margin-top: 10px;
@@ -571,8 +571,7 @@ a:hover {
   padding-top: 35px;
 }
 
-
-.skills-body{
+.skills-body {
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -581,16 +580,37 @@ a:hover {
   max-width: 500px;
 }
 
-.html-container, .css-container, .javascript-container,.java-container, .bootstrap-container, .management-container,.ms-office-container{
+.html-container,
+.css-container,
+.javascript-container,
+.java-container,
+.react-container,
+.bootstrap-container,
+.management-container,
+.ms-office-container {
   display: flex;
   justify-content: space-between;
 }
 
-.skill-html, .skill-css, .skill-javascript, .skill-java, .skill-bootstrap, .skill-management, .skill-ms-office {
+.skill-html,
+.skill-css,
+.skill-javascript,
+.skill-java,
+.skill-bootstrap,
+.skill-react,
+.skill-management,
+.skill-ms-office {
   margin: 10px;
 }
 
-.html-main, .css-main, .javascript-main, .java-main, .bootstrap-main, .management-main, .ms-office-main {
+.html-main,
+.css-main,
+.javascript-main,
+.java-main,
+.bootstrap-main,
+.management-main,
+.react-main,
+.ms-office-main {
   width: 100%;
   height: 8px;
   background-color: var(--ele-background);
@@ -600,7 +620,14 @@ a:hover {
   position: relative;
 }
 
-.html-percentage, .css-percentage, .javascript-percentage,.java-percentage, .bootstrap-percentage, .management-percentage, .ms-office-percentage {
+.html-percentage,
+.css-percentage,
+.javascript-percentage,
+.java-percentage,
+.react-percentage,
+.bootstrap-percentage,
+.management-percentage,
+.ms-office-percentage {
   /* width: 95%; */
   height: 8px;
   border-radius: 8px;
@@ -611,44 +638,45 @@ a:hover {
   transition: width 2s ease-in-out;
 }
 
-.html-percentage{
+.html-percentage {
   width: 95%;
 }
 
-.css-percentage{
+.css-percentage {
   width: 80%;
 }
 
-.javascript-percentage{
+.javascript-percentage {
+  width: 90%;
+}
+
+.react-percentage{
   width: 85%;
 }
 
-.java-percentage{
+.java-percentage {
   width: 70%;
 }
 
-.bootstrap-percentage{
+.bootstrap-percentage {
   width: 80%;
 }
 
-.management-percentage{
+.management-percentage {
   width: 85%;
 }
 
-.ms-office-percentage{
+.ms-office-percentage {
   width: 75%;
 }
 
-
-
-@media screen and (max-width:610ox){
-  .skills-heading{
+@media screen and (max-width: 610ox) {
+  .skills-heading {
     font-size: 1.5rem;
     padding: 25px 0 15px 0;
     margin-top: 10px;
   }
 }
-
 
 .projects-heading {
   display: flex;
@@ -658,14 +686,17 @@ a:hover {
   padding-top: 35px;
 }
 
-.projects-body{
+.projects-body {
   display: grid;
   grid-template-columns: auto auto;
   width: 90%;
   min-height: 90vh;
 }
 
-.project-1,.project-2, .project-3, .project-4{
+.project-1,
+.project-2,
+.project-3,
+.project-4 {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -673,7 +704,7 @@ a:hover {
   position: relative;
 }
 
-.pro{
+.pro {
   display: flex;
   justify-content: center;
   width: 60%;
@@ -687,34 +718,40 @@ a:hover {
   cursor: pointer;
 }
 
-.pro:hover{
+.pro:hover {
   opacity: 0.85;
   width: 65%;
   min-width: 320px;
 }
 
-.button-project{
+.button-project {
   position: relative;
   left: 120%;
 }
 
-.project-5,.project-6, .project-7, .project-8{
+.project-5,
+.project-6,
+.project-7,
+.project-8 {
   width: 100%;
   display: none;
+  /* opacity: 0; */
   justify-content: center;
   margin-top: 10px;
   position: relative;
   transition: all 0.5s ease-in-out;
 }
 
-.demo, .code{
+.demo,
+.code {
   width: 90px;
   height: 28px;
 }
 
-
-
-.pro-5, .pro-6, .pro-7, .pro-8{
+.pro-5,
+.pro-6,
+.pro-7,
+.pro-8 {
   display: flex;
   justify-content: center;
   width: 60%;
@@ -723,55 +760,53 @@ a:hover {
   border-radius: 15px;
 }
 
-#less{
+#less {
   display: none;
 }
 
-.project-button{
+.project-button {
   position: absolute;
   display: block;
   bottom: 15px;
   z-index: 100;
 }
 
-@media screen and (max-width:610px){
-  .projects-heading{
+@media screen and (max-width: 610px) {
+  .projects-heading {
     font-size: 1.5rem;
     padding: 25px 0 15px 0;
     margin-top: 10px;
   }
-  .button-project{
+  .button-project {
     position: static;
     margin-left: 10px;
   }
-
 }
 
-.project-title-name{
+.project-title-name {
   text-align: center;
 }
 
-@media screen and (max-width:800px){
-  .projects-body{
+@media screen and (max-width: 800px) {
+  .projects-body {
     display: grid;
     grid-template-columns: auto;
     width: 80%;
   }
 
-  .pro{
+  .pro {
     min-width: 80%;
   }
 
-  .button-project{
+  .button-project {
     position: static;
     margin-left: 10px;
   }
 
-  .pro:hover{
+  .pro:hover {
     opacity: 0.85;
     min-width: 85%;
   }
-
 }
 
 .contact-heading {
@@ -783,7 +818,7 @@ a:hover {
   padding-top: 35px;
 }
 
-.contact-body{
+.contact-body {
   min-height: 80vh;
   display: flex;
   justify-content: center;
@@ -791,14 +826,14 @@ a:hover {
   padding: 0;
 }
 
-.form{
+.form {
   width: 75%;
   max-width: 700px;
   margin: 5px 0px;
   padding: 0px;
 }
 
-.form-class{
+.form-class {
   width: 95%;
   height: 45px;
   margin: 7px;
@@ -813,45 +848,44 @@ a:hover {
   font-weight: 600;
 }
 
-.form-message-text{
+.form-message-text {
   max-width: 95%;
   min-width: 95%;
   min-height: 120px;
   max-height: 120px;
 }
 
-
-.form-class:focus{
+.form-class:focus {
   border-bottom: 4px solid var(--title-color);
   -webkit-transition: 0.2s;
   transition: 0.2s ease-in-out;
 }
 
-.form-text{
+.form-text {
   display: flex;
   justify-content: center;
   text-align: center;
   margin-bottom: 30px;
 }
 
-.contact-text{
+.contact-text {
   text-align: justify;
   width: 90%;
 }
 
-.button-contact{
+.button-contact {
   margin-left: 10px;
   width: 44%;
 }
 
-hr{
-width: 70vw;
-outline: none;
-border: none;
-border-top: 2px solid var(--title-color);
+hr {
+  width: 70vw;
+  outline: none;
+  border: none;
+  border-top: 2px solid var(--title-color);
 }
 
-.down{
+.down {
   height: 10%;
   margin: 10px;
   padding: 10px;
@@ -860,29 +894,29 @@ border-top: 2px solid var(--title-color);
 
 /* Ofset limit */
 
-@media screen and (max-width:610px){
-  .contact-heading{
+@media screen and (max-width: 610px) {
+  .contact-heading {
     font-size: 1.5rem;
     padding: 25px 0 15px 0;
     margin-top: 10px;
   }
-  .form-class{
+  .form-class {
     height: 35px;
     margin: 7px;
     font-size: 0.75rem;
   }
-  .contact-text{
-   font-size: 12px;
-   margin-bottom: 0;
+  .contact-text {
+    font-size: 12px;
+    margin-bottom: 0;
   }
-  .form-message-text{
+  .form-message-text {
     max-width: 95%;
     min-width: 95%;
     min-height: 35px;
     max-height: 35px;
   }
 
-  .button-contact{
+  .button-contact {
     margin: 3px 7px;
     width: 95%;
     height: 35px;
