@@ -143,5 +143,6 @@ function getLocation() {
 function showPosition(position) {
  const lat = position.coords.latitude;
  const lon = position.coords.longitude;
+ console.log(lat + " "+ lon);
  weather.fetchWeatherLatLong(lat,lon);
 }
