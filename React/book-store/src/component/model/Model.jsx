@@ -3,6 +3,7 @@ import React from "react";
 import Card from "../card/Card";
 
 const Model = ({ data }) => {
+  // console.log(data);
   return (
     <div>
       <div className="book-card active">

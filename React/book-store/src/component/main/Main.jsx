@@ -12,7 +12,7 @@ import Footer from "../footer/Footer";
 function Main() {
   const [data, setData] = useState([]);
   const [originaldata, setOriginaldata] = useState([]);
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
 
   const [number, setNumber] = useState(10);
   const [increment, setIncrement] = useState(0);
@@ -21,8 +21,9 @@ function Main() {
   const [price, setPrice] = useState(10000);
   const [rating, setRating] = useState(50);
 
-  const url = `https://www.googleapis.com/books/v1/volumes?q=${input}+${genreType ? "subject" : ""
-    }:${genreType}&key=${apiKey}&maxResults=40`;
+  const url = `https://www.googleapis.com/books/v1/volumes?q=${input}+${
+    genreType ? "subject" : ""
+  }:${genreType}&key=${apiKey}&maxResults=40`;
 
   const handlePage = () => {
     setInput(categoryList[Math.floor(Math.random() * categoryList.length)]);
@@ -66,53 +67,62 @@ function Main() {
     setRating(50);
   };
 
-  const handlePrice = 
-  useCallback((e) => {
-    setPrice(e.target.value);
-    setData(originaldata.filter((item)=>{
-      return (
-        Number(item.volumeInfo.averageRating) <= Number(rating/10) && Number(item.saleInfo.retailPrice.amount) <= Number(price)
-      )
-    }))
-  },
-    [originaldata, price, rating],
-  )
-  
+  const handlePrice = useCallback(
+    (e) => {
+      setPrice(e.target.value);
+      setData(
+        originaldata.filter((item) => {
+          return (
+            Number(item.volumeInfo.averageRating) <= Number(rating / 10) &&
+            Number(item.saleInfo.retailPrice.amount) <= Number(price)
+          );
+        })
+      );
+    },
+    [originaldata, price, rating]
+  );
 
-  const handleRating = 
-  
-  useCallback((e) => {
-    setRating(e.target.value);
-    setData(originaldata.filter((item)=>{
-      return (
-        Number(item.saleInfo.retailPrice.amount) <= Number(price) && Number(item.volumeInfo.averageRating) <= Number(rating/10)      )
-    }))
-  },[originaldata, price, rating]);
+  const handleRating = useCallback(
+    (e) => {
+      setRating(e.target.value);
+      setData(
+        originaldata.filter((item) => {
+          return (
+            Number(item.saleInfo.retailPrice.amount) <= Number(price) &&
+            Number(item.volumeInfo.averageRating) <= Number(rating / 10)
+          );
+        })
+      );
+    },
+    [originaldata, price, rating]
+  );
 
   useEffect(() => {
     const apiRender = async () => {
       try {
         const response = await axios.get(url);
         let result = await response.data.items;
+        // console.log(result);
 
         for (let i = 0; i < result.length; i++) {
           if (!result[i].volumeInfo.averageRating) {
-            result[i].volumeInfo.averageRating = (Math.random() * 4.9 + 0.1).toFixed(1)
+            result[i].volumeInfo.averageRating = (
+              Math.random() * 4.9 +
+              0.1
+            ).toFixed(1);
           }
 
-          if (result[i].saleInfo.saleability==="NOT_FOR_SALE") {
-  
-            result[i].saleInfo =  {   
-              ...result[i].saleInfo, saleability : "FOR_SALE", retailPrice:{
-                amount:(Math.random() * 9900 + 100).toFixed(2),
-                currencyCode: 'INR'
-              }
-            }
-              
+          if (result[i].saleInfo.saleability === "NOT_FOR_SALE") {
+            result[i].saleInfo = {
+              ...result[i].saleInfo,
+              saleability: "FOR_SALE",
+              retailPrice: {
+                amount: (Math.random() * 9900 + 100).toFixed(2),
+                currencyCode: "INR",
+              },
+            };
           }
-          
-           
-        }   
+        }
 
         setData(result.splice(increment, number));
         setOriginaldata(result.splice(increment, number));
