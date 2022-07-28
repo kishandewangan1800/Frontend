@@ -5,6 +5,9 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 
 import './App.css'
 
+import { Calendar, Employees, Ecommerce } from './pages';
+
+
 const App = () => {
 
   const activeMenu = false;

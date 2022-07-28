@@ -24,3 +24,7 @@ function resetEvent() {
     console.log(griditem);
   }
 }
+
+
+
+
