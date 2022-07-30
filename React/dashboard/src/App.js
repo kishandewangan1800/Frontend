@@ -8,9 +8,11 @@ import './App.css'
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
 import { Calendar, Employees, Ecommerce, Orders, Stacked, Pyramid, Customers,Line, Kanban, Area, Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from './pages';
 
-const App = () => {
+import { useStateContext } from './contexts/ContextProvider';
 
-  const activeMenu = false;
+const App = () => {
+  const {activeMenu} = useStateContext();
+
   return (
     <div>
       <BrowserRouter>
@@ -27,11 +29,11 @@ const App = () => {
           </div>
           {
             activeMenu ? (
-              <div className='w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white'>
+              <div className='w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white transition-all'>
                 <Sidebar />
               </div>
             ) : (
-              <div className='w-0 dark:bg-secondary-dark-bg'>
+              <div className='w-0 dark:bg-secondary-dark-bg transition-all'>
                 <Sidebar />
               </div>
             )
