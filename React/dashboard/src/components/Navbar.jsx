@@ -20,10 +20,9 @@ const NavButton = ({ title, customFun, icon, color, dotColor }) => (
     >
       <span
         style={{ background: dotColor }}
-        className="absolute inline-flex rounded-full h-2 w-2 right-2 top-2"
-      >
+        className="absolute inline-flex rounded-full h-2 w-2 right-2 top-2" />
         {icon}
-      </span>
+     
     </button>
   </TooltipComponent>
 );
@@ -39,32 +38,54 @@ const Navbar = () => {
     setScreenSize,
   } = useStateContext();
 
+  useEffect(() => {
+    const handleResize = () => setScreenSize(window.innerWidth)
+
+    window.addEventListener('resize', handleResize);
+
+    handleResize();
+
+    return ()=> window.removeEventListener('resize', handleResize);
+  }, []);
+  
+  useEffect(()=>{
+    if(screenSize<=900){
+      setActiveMenu(false)
+    }else{
+      setActiveMenu(true)
+    }
+
+  }, [screenSize])
+
+
+
+
   return (
     <div className="flex justify-between p-2 md:mx-6 relative">
       <NavButton
         title="Menu"
-        color="blue"
+        color="black"
         icon={<AiOutlineMenu />}
         customFun={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)}
       />
       <div className="flex">
         <NavButton
           title="Cart"
-          color="blue"
+          color="black"
           icon={<FiShoppingCart />}
           customFun={() => handleClick("cart")}
         />
 
         <NavButton
           title="Chat"
-          color="blue"
+          color="black"
           icon={<BsChatLeft />}
           customFun={() => handleClick("chat")}
           dotColor="#03c9d7"
         />
         <NavButton
           title="Notification"
-          color="blue"
+          color="black"
           icon={<RiNotification3Line />}
           customFun={() => handleClick("notification")}
           dotColor="#03c9d7"
