@@ -46,7 +46,7 @@ const Sidebar = () => {
           <div className="mt-10 ">
             {links.map((item) => (
               <div key={item.title}>
-                <p classsName="text-black-900 m-3">{item.title}</p>
+                <p className="text-black-900 m-3">{item.title}</p>
                 {item.links.map((link) => (
                   <NavLink
                     to={`${link.name}`}

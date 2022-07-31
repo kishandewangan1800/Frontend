@@ -96,7 +96,7 @@ const Navbar = () => {
             onClick={() => handleClick("userProfile")}
           >
             <img src={avatar} alt="Avatar" className="rounded-full w-8 h-8 " />
-            <p>
+            <p className='m-1'>
               <span className="text-gray-400 text-14">Hi,</span>{" "}
               <span className="text-gray-400 font-bold ml-1 text-14">
                 Kishan
