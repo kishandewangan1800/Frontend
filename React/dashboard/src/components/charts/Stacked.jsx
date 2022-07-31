@@ -8,12 +8,12 @@ const Stacked = ({width, height}) => {
     <ChartComponent 
     width={width}
     height={height}
-    id='stack chart'
+    id='charts'
     primaryXAxis={stackedPrimaryXAxis}
     primaryYAxis ={stackedPrimaryYAxis}
     chartArea ={{border:{width:0}}}
     tooltip={{enable:true}}
-    LegendSettings={{background:'white'}}
+    legendSettings={{background:'white'}}
 
     >
       <Inject 
