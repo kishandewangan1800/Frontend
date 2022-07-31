@@ -11,6 +11,7 @@ import { Cart, Chat, Notification, UserProfile } from ".";
 import { useStateContext } from "../contexts/ContextProvider";
 
 const NavButton = ({ title, customFun, icon, color, dotColor }) => (
+
   <TooltipComponent content={title} position="BottomCenter">
     <button
       type="button"
@@ -36,6 +37,7 @@ const Navbar = () => {
     setIsClicked,
     screenSize,
     setScreenSize,
+    currentColor
   } = useStateContext();
 
   useEffect(() => {
@@ -64,28 +66,28 @@ const Navbar = () => {
     <div className="flex justify-between p-2 md:mx-6 relative">
       <NavButton
         title="Menu"
-        color="black"
+        color={currentColor}
         icon={<AiOutlineMenu />}
         customFun={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)}
       />
       <div className="flex">
         <NavButton
           title="Cart"
-          color="black"
+          color={currentColor}
           icon={<FiShoppingCart />}
           customFun={() => handleClick("cart")}
         />
 
         <NavButton
           title="Chat"
-          color="black"
+          color={currentColor}
           icon={<BsChatLeft />}
           customFun={() => handleClick("chat")}
           dotColor="#03c9d7"
         />
         <NavButton
           title="Notification"
-          color="black"
+          color={currentColor}
           icon={<RiNotification3Line />}
           customFun={() => handleClick("notification")}
           dotColor="#03c9d7"
