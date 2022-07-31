@@ -7,7 +7,11 @@ import { themeColors } from "../data/dummy";
 import { useStateContext } from "../contexts/ContextProvider";
 
 const ThemeSettings = () => {
-  const {setColor, setMode, currentMode, currentColor, setThemeSettings } = useStateContext()
+  const {setColor, setMode, currentMode, currentColor, setThemeSettings, setCurrentMode } = useStateContext()
+
+  const handleChange =(e) =>{
+    setCurrentMode(e.target.value);
+  }
 
   return (
     <div className="bg-half-transparent w-screen fixed nav-item top-0 right-0 ">
@@ -33,7 +37,8 @@ const ThemeSettings = () => {
               value="Light"
               className="cursor-pointer"
               onClick={setMode}
-              checked={currentMode==='Light'}
+              onChange={(e)=> handleChange(e)}
+              checked={ currentMode==='Light' }
             />
             <label htmlFor="light" className="ml-2 text-md cursor-pointer">
               Light
@@ -48,7 +53,8 @@ const ThemeSettings = () => {
               value="Dark"
               className="cursor-pointer"
               onClick={setMode}
-              checked={currentMode==='Dark'}
+              onChange={(e)=> handleChange(e)}
+              checked={currentMode === 'Dark'}
             />
             <label htmlFor="dark" className="ml-2 text-md cursor-pointer">
               Dark
