@@ -1,8 +1,8 @@
 import React from "react";
-import { BsRupee } from "react-icons/bs";
+import { BsDolorCurrency } from "react-icons/bs";
 import { GoPrimitiveDot } from "react-icons/go";
 
-import { Stacked, Pie, Button, SparkLine } from "../components";
+import { Stacked, Button, SparkLine } from "../components";
 
 import {
   earningData,
@@ -24,7 +24,7 @@ const Ecommerce = () => {
           <div className="flex justify-between items-center">
             <div>
               <p className="font-bold text-gray-400">Earnings</p>
-              <p className="text-2xl">₹10789</p>
+              <p className="text-2xl"> ₹10789</p>
             </div>
           </div>
           <div className="mt-6">
