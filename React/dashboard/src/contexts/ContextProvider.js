@@ -4,18 +4,19 @@ const StateContext = createContext();
 
 const initialState = {
   chat: false,
-  chart: false,
+  cart: false,
   userProfile: false,
   notification: false,
 };
 
 export const ContextProvider = ({ children }) => {
-  const [activeMenu, setActiveMenu] = useState(true);
+  const [activeMenu, setActiveMenu] = useState(false);
   const [isClicked, setIsClicked] = useState(initialState);
   const [screenSize, setScreenSize] = useState(undefined);
   const [currentColor, setCurrentColor] = useState("#03C9D7");
   const [currentMode, setCurrentMode] = useState("Light");
-  const [themeSettings, setThemeSettings] = useState(false)
+  const [themeSettings, setThemeSettings] = useState(false);
+  const [login, setLogin] = useState(false);
 
   const setMode = (e) => {
     setCurrentMode(e.target.value);
@@ -29,9 +30,16 @@ export const ContextProvider = ({ children }) => {
     setThemeSettings(false);
   };
 
-  const handleClick = (clicked) => {
-    setIsClicked({ ...initialState, [clicked]: true });
-  };
+  const handleClick = (clicked) =>{
+    handleClose();
+    setIsClicked(isClicked => 
+      ({...isClicked, [clicked]: true}));
+  } 
+  
+  const handleClose = () =>{
+    setIsClicked(initialState);
+  } 
+  
 
   return (
     <StateContext.Provider
@@ -50,7 +58,10 @@ export const ContextProvider = ({ children }) => {
         setCurrentMode,
         setThemeSettings,
         setMode,
-        setColor
+        setColor,
+        login,
+        setLogin,
+        handleClose
       }}
     >
       {children}

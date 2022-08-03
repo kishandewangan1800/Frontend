@@ -613,6 +613,36 @@ export const chatData = [
   },
 ];
 
+export const notificationData = [
+  {
+    image:
+      avatar2,
+    message: 'Roman Joined the Team!',
+  },
+  {
+    image:
+      avatar3,
+    message: 'New message received',
+  },
+  {
+    image:
+      product5,
+      message: 'Added to the card',
+  },
+  {
+    image:
+      product6,
+      message: 'Item has deliverd',
+  },
+  {
+    image:
+      avatar4,
+    message: 'New Payment received',
+
+  },
+]
+
+
 export const earningData = [
   {
     icon: <MdOutlineSupervisorAccount />,

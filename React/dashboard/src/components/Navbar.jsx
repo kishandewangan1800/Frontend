@@ -22,6 +22,7 @@ const NavButton = ({ title, customFun, icon, color, dotColor }) => (
       <span
         style={{ background: dotColor }}
         className="absolute inline-flex rounded-full h-2 w-2 right-2 top-2" />
+        
         {icon}
      
     </button>
@@ -85,6 +86,7 @@ const Navbar = () => {
           customFun={() => handleClick("chat")}
           dotColor="#03c9d7"
         />
+
         <NavButton
           title="Notification"
           color={currentColor}
@@ -92,6 +94,7 @@ const Navbar = () => {
           customFun={() => handleClick("notification")}
           dotColor="#03c9d7"
         />
+        
         <TooltipComponent content="profile" position="BottomCenter">
           <div
             className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg"
