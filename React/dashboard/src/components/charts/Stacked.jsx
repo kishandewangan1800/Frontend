@@ -5,6 +5,7 @@ import { stackedCustomSeries, stackedPrimaryXAxis, stackedPrimaryYAxis} from '..
 
 const Stacked = ({width, height}) => {
   return (
+    <div style={{zIndex:-100}}>
     <ChartComponent 
     width={width}
     height={height}
@@ -14,7 +15,8 @@ const Stacked = ({width, height}) => {
     chartArea ={{border:{width:0}}}
     tooltip={{enable:true}}
     legendSettings={{background:'white'}}
-
+    
+  
     >
       <Inject 
       services={[Legend, Category, StackingColumnSeries, Tooltip]}
@@ -27,6 +29,7 @@ const Stacked = ({width, height}) => {
       </SeriesCollectionDirective>
 
     </ChartComponent>
+    </div>
   )
 }
 

@@ -1,4 +1,5 @@
 import react, { createContext, useContext, useState } from "react";
+import avatar from '../data/avatar.jpg'
 
 const StateContext = createContext();
 
@@ -17,6 +18,11 @@ export const ContextProvider = ({ children }) => {
   const [currentMode, setCurrentMode] = useState("Light");
   const [themeSettings, setThemeSettings] = useState(false);
   const [login, setLogin] = useState(false);
+  const [profilePic, setProfilePic] = useState(avatar);
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] =useState("")
+
 
   const setMode = (e) => {
     setCurrentMode(e.target.value);
@@ -61,7 +67,12 @@ export const ContextProvider = ({ children }) => {
         setColor,
         login,
         setLogin,
-        handleClose
+        handleClose,
+        profilePic, setProfilePic,
+        firstName, setFirstName,
+        lastName, setLastName,
+        email, setEmail
+
       }}
     >
       {children}

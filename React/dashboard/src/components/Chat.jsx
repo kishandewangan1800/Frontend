@@ -11,7 +11,9 @@ const Chat = () => {
   const { currentColor, handleClose } = useStateContext();
 
   return (
-    <div className="nav-item absolute  right-5 md:right-52 top-16 bg-white dark:bg-[#42464D] p-8 rounded-xl w-96 shadow-lg">
+    <div className="nav-item absolute  right-5 md:right-52 sm:right-12 top-16 bg-white dark:bg-[#42464D] p-8 rounded-xl w-96 shadow-lg"
+    style={{zIndex:100000}}
+    >
       <div className="flex justify-between items-center">
         <div className="flex gap-3">
           <p className="font-semibold text-lg dark:text-gray-200">Messages</p>
@@ -19,7 +21,7 @@ const Chat = () => {
             5 New
           </button>
         </div>
-        <TooltipComponent content="Menu" position="BottomCenter">
+        <TooltipComponent content="Close" position="TopLeft">
               <button
                 type="button"
                 className="text-xl rounded-full p-3 hover:bg-light-gray mt-4 block"
@@ -31,7 +33,7 @@ const Chat = () => {
       </div>
       <div className="mt-5 ">
         {chatData?.map((item, index) => (
-          <div key={index} className="flex items-center gap-5 border-b-1 border-color p-3 leading-8 cursor-pointer">
+          <div key={index} className="flex items-center gap-5 border-b-1 border-color p-3 leading-8 hover:bg-light-gray cursor-pointer  dark:hover:bg-[#42464D]">
             <div className="relative">
               <img
                 className="rounded-full h-10 w-10"

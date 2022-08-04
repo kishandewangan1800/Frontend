@@ -38,7 +38,9 @@ const Navbar = () => {
     setIsClicked,
     screenSize,
     setScreenSize,
-    currentColor
+    currentColor,
+    profilePic,
+    firstName
   } = useStateContext();
 
   useEffect(() => {
@@ -100,11 +102,11 @@ const Navbar = () => {
             className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg"
             onClick={() => handleClick("userProfile")}
           >
-            <img src={avatar} alt="Avatar" className="rounded-full w-8 h-8 " />
+            <img src={profilePic ? profilePic : avatar} alt="Avatar" className="rounded-full w-8 h-8 " />
             <p className='m-1'>
               <span className="text-gray-400 text-14">Hi,</span>{" "}
               <span className="text-gray-400 font-bold ml-1 text-14">
-                Kishan
+                {firstName}
               </span>
             </p>
             <MdKeyboardArrowDown className="text-gray-400 text-14" />

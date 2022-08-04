@@ -12,7 +12,8 @@ const LineChart = () => {
 
   return (
     <ChartComponent
-    id='line-chart' 
+    id='line-chart'
+    style={{position:'static'}}
     height='420px'
     primaryXAxis={LinePrimaryXAxis}
     primaryYAxis={LinePrimaryYAxis}

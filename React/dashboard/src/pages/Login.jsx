@@ -11,15 +11,26 @@ import shareVideo from "../assets/share.mp4";
 const clientId = process.env.REACT_APP_GOOGLE_API_TOKEN;
 
 function Login() {
-    const { login, setLogin } = useStateContext();
+    const { login, setLogin, setProfilePic,setFirstName, setLastName, setEmail  } = useStateContext();
 
     const [showloginButton, setShowloginButton] = useState(true);
     const [showlogoutButton, setShowlogoutButton] = useState(false);
-    const onLoginSuccess = (res) => {
+    const onLoginSuccess = async (res) => {
         // console.log('Login Success:', res.profileObj);
+       try{
+        const response = await res.profileObj
+        const image = await response.imageUrl;
+        await setEmail(response.email);
+        await setFirstName(response.givenName)
+        await setLastName(response.familyName)
+        await setProfilePic(image)
         setShowloginButton(false);
         setShowlogoutButton(true);
         setLogin(true);
+        // console.log(response.imageUrl)
+       }catch(err){
+        
+       }
     };
 
     const onLoginFailure = (res) => {
@@ -67,14 +78,6 @@ function Login() {
                         />
                     ) : null}
 
-                    {showlogoutButton ? (
-                        <GoogleLogout
-                            clientId={clientId}
-                            buttonText="Sign Out"
-                            onLogoutSuccess={onSignoutSuccess}
-                            onClick={() => { }}
-                        ></GoogleLogout>
-                    ) : null}
                 </div>
             </div>
         </div>
