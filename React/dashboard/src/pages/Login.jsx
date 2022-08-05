@@ -1,14 +1,11 @@
 import { logWithIn } from "@syncfusion/ej2-react-charts";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { GoogleLogin, GoogleLogout } from "react-google-login";
 import { useStateContext } from "../contexts/ContextProvider";
 import { FcGoogle } from "react-icons/fc";
 
-import logo from '../assets/logo.png'
 
-import shareVideo from "../assets/share.mp4";
-
-const clientId = process.env.REACT_APP_GOOGLE_API_TOKEN;
+const clientId = '1061920707292-s5tiki35dibac7h5s6jfnqpqmucfhg4m.apps.googleusercontent.com';
 
 function Login() {
     const { login, setLogin, setProfilePic,setFirstName, setLastName, setEmail  } = useStateContext();
@@ -26,7 +23,7 @@ function Login() {
         await setProfilePic(image)
         setShowloginButton(false);
         setShowlogoutButton(true);
-        setLogin(true);
+        await setLogin(true);
         // console.log(response.imageUrl)
        }catch(err){
         
@@ -34,7 +31,7 @@ function Login() {
     };
 
     const onLoginFailure = (res) => {
-        document.write("Login Failed:", res);
+        document.write("Login Failed");
     };
 
     const onSignoutSuccess = () => {
@@ -63,7 +60,7 @@ function Login() {
                             onFailure={onLoginFailure}
                             cookiePolicy={"single_host_origin"}
                             isSignedIn={true}
-                            onClick={() => { }}
+                            // onClick={() => { }}
                             render={(renderProps) => (
                                 <button
                                     type="button"

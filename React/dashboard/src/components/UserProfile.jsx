@@ -16,7 +16,7 @@ const UserProfile = () => {
   const { currentColor, handleClose, login, setLogin , profilePic, firstName, lastName, email} = useStateContext();
 
   return (
-    <div className="nav-item absolute right-5 md:right-52 sm:right-12 top-16 bg-white dark:bg-[#42464D] p-8 rounded-xl w-96 shadow-lg"
+    <div className="nav-item absolute right-5 md:right-52 sm:right-12 top-16 bg-white dark:bg-[#42464D] p-8 rounded-xl w-96 sm:w-full shadow-lg"
     style={{zIndex:1000000}}
     >
     <div className="flex justify-between items-center">

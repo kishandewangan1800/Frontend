@@ -5,6 +5,7 @@ import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
 import "./App.css";
 
+
 import { Navbar, Footer, Sidebar, ThemeSettings } from "./components";
 import {
   Calendar,
@@ -27,7 +28,10 @@ import {
 
 import Login from "./pages/Login";
 
+
 import { useStateContext } from "./contexts/ContextProvider";
+
+
 
 const App = () => {
   const {
@@ -38,6 +42,8 @@ const App = () => {
     currentColor,
     login
   } = useStateContext();
+
+
 
   return (
     <div className={currentMode === "Dark" ? "dark" : ""}>
