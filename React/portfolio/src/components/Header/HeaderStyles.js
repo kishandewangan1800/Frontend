@@ -17,6 +17,22 @@ export const Container = styled.div`
     grid-row-gap: 0.5rem;
   }
 `;
+
+export const SocialContainer = styled.div`
+	display: flex;
+  align-items: center;
+
+	@media ${props => props.theme.breakpoints.md}{
+		justify-content: center;
+		padding-right: 16px;
+		flex-wrap: wrap;
+	}
+`
+
+export const Span = styled.span`
+font-size :2rem;
+`;
+
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
