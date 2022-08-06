@@ -22,7 +22,7 @@ const Footer = () => {
 
       <SocialContainer>
         <CompanyContainer>
-          <Slogan>Innovating one project</Slogan>
+          <Slogan>Learning & Creating</Slogan>
         </CompanyContainer>
         <SocialIcons href='https://github.com/kishandewangan1800'>
         <AiFillGithub />

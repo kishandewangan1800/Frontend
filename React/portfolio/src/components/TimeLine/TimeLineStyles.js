@@ -10,7 +10,7 @@ export const CarouselContainer = styled.ul`
   justify-content: space-between; 
   /* overflow-x: hidden; */
 
-  margin-left: 32px;
+  margin-left: 10px;
   &:first-of-type{
     margin-left: 0px;
   }

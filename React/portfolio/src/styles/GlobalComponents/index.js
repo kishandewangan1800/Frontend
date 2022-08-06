@@ -53,6 +53,34 @@ export const SectionTitle = styled.h2`
     max-width: 100%;
   }
 `
+export const SectionSubTitle = styled.h2`
+  font-weight: 800;
+  font-size:'60px';
+  line-height: '50px';
+  width: max-content;
+  max-width: 100%;
+  background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+
+  @media ${props => props.theme.breakpoints.md}{
+    font-size: '22px';
+    line-height: '25px';
+    margin-bottom: 12px;
+  }
+
+  @media ${props => props.theme.breakpoints.sm}{
+    font-size: 22px;
+    line-height: 30px;
+    font-size: '20px';
+    line-height:'30px';
+    margin-bottom: 8px;
+    max-width: 100%;
+  }
+`
+
+
 
 export const SectionText = styled.p`
   max-width: 800px;
@@ -75,6 +103,8 @@ export const SectionText = styled.p`
     padding-bottom: 16px;
   }
 `
+
+
 
 export const SectionDivider = styled.div`
 

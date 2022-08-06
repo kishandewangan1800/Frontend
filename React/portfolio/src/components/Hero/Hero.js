@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { Section, SectionText, SectionTitle, SectionSubText } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
@@ -12,13 +12,16 @@ const Hero = () => (
         My Portfolio
       </SectionTitle>
       <SectionText>
-      I build things for the web. I’m a Frontend Web Developer, attanding Full Stack Web Development Bootcamp at AccioJob
+        Hi, I am Kishan Dewangan
       </SectionText>
-      <Button onClick={()=>window.location='https://google.com'}>
+      <SectionSubText>
+      I build things for the web. I’m a Frontend Web Developer, attanding Full Stack Web Development Bootcamp at AccioJob
+      </SectionSubText>
+      <br />
+      <Button onClick={()=>window.location='/resume.pdf'}>
         Download Resume
       </Button>
     </LeftSection>
-
   </Section>
 );
 

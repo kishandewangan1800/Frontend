@@ -1,9 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { DiFirebase, DiReact, DiJava} from "react-icons/di";
 import {FiBook} from 'react-icons/fi'
 
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { Section, SectionDivider, SectionText, SectionTitle, SectionSubTitle } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
 import {
   List,
@@ -53,16 +52,22 @@ const Timeline = () => {
 
   return (
     <Section id="about">
+       <SectionDivider />
+       <br />
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+      I build things for the web. I’m a Full-Stack Developer aspirant.
       </SectionText>
+      <SectionSubTitle>
+      Academic
+      </SectionSubTitle>
+      
       <List>
       <ListItem>
         <FiBook size="2rem" />
         <ListContainer>
           <ListTitle>BE</ListTitle>
-          <ListParagraph>Working as TA at Coding Ninjas in DSA Java (Jul 22 - Present)</ListParagraph>
+          <ListParagraph>Mechanical Engineering from CSVTU, Bhilai || Grade 77.61% (Jul 14 - May 18)</ListParagraph>
         </ListContainer>
       </ListItem>
 
@@ -70,7 +75,7 @@ const Timeline = () => {
         <FiBook size="3rem" />
         <ListContainer>
           <ListTitle>HSC</ListTitle>
-          <ListParagraph>Worked as Frontend Developer at Agrivate in React (Mar 22 - Jun 22)</ListParagraph>
+          <ListParagraph>HCS in PCM from CG Board, Raipur || Grade 77.40% (2014)</ListParagraph>
         </ListContainer>
       </ListItem>
 
@@ -78,12 +83,15 @@ const Timeline = () => {
         <FiBook size="3rem" />
         <ListContainer>
           <ListTitle>SSC</ListTitle>
-          <ListParagraph>Worked as Ass. Marketing Manager at MBP & SBH (May 18 - Oct 21)</ListParagraph>
+          <ListParagraph>HCS in General from CG Board, Raipur || Grade 79.67% (2012)</ListParagraph>
         </ListContainer>
       </ListItem>
     </List>
 
 
+    <SectionSubTitle>
+      Skills
+      </SectionSubTitle>
 
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
@@ -96,7 +104,7 @@ const Timeline = () => {
                 onClick={(e) => handleClick(e, index)}
               >
               <CarouselItemTitle>
-                {item.year}
+                {item.tech}
                 <CarouselItemImg
                     width="208"
                     height="6"
